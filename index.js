@@ -3,11 +3,14 @@ const db = require("./configs/mongoose");
 const app = express();
 const port = 8000;
 
+// Body parser
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Routes handler
 app.use("/", require("./routes"));
 
+// Database connection
 db()
   .then(() => {
     app.listen(port, (err) => {
