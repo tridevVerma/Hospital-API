@@ -28,10 +28,10 @@ An Hospital API using MongoDB and NodeJS
 * ### Data that needs to be sent with a route :
   - /doctors/register → username and password (POST with Form-Body)
   - /doctors/login → username and password (POST with Form-Body)
-  - /patients/register → JWT Token (Header Authentication), name, age, phone
-  - /patients/:id/create_report → JWT Token (Header Authentication), patient id (in params), status ["Negative", "Travelled-Quarantine", "Symptoms-Quarantine", "Positive-Admit"] (Form-Body)
-  - /patients/:id/all_reports → JWT Token (Header Authentication), patient id (in params)
-  - /reports/:status → JWT Token (Header Authentication), status (in params)
+  - /patients/register → JWT Token (Header Authentication), name, age, phone (POST with Form-Body)
+  - /patients/:id/create_report → JWT Token (Header Authentication), patient id (in params), status ["Negative", "Travelled-Quarantine", "Symptoms-Quarantine", "Positive-Admit"] (POST with Form-Body)
+  - /patients/:id/all_reports → JWT Token (Header Authentication), patient id (in params) (GET request)
+  - /reports/:status → JWT Token (Header Authentication), status (in params) (GET request)
 
 ## Built With
 Technology Stack to build this Application
@@ -49,7 +49,7 @@ Technology Stack to build this Application
 
 1. Clone the repo
    ```sh
-   git clone [https://github.com/your_username_/Project-Name.git](https://github.com/tridevVerma/Hospital-API.git)
+   git clone (https://github.com/tridevVerma/Hospital-API.git)
    ```
 2. Install NPM packages
    ```sh
