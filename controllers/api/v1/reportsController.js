@@ -5,7 +5,7 @@ const Patient = require("../../../models/Patient");
 module.exports.createReport = async (req, res) => {
   try {
     // Check if patient exist --> if not throw error
-    const patient = await Patient.findOne({ _id: req.params._id });
+    const patient = await Patient.findOne({ _id: req.params.id });
 
     if (!patient) {
       return res.status(404).json({
