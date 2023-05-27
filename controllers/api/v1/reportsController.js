@@ -1,6 +1,14 @@
 const Report = require("../../../models/Report");
 const Patient = require("../../../models/Patient");
 
+// Valid Status
+// [
+//   "Negative",
+//   "Travelled-Quarantine",
+//   "Symptoms-Quarantine",
+//   "Positive-Admit",
+// ]
+
 // Create a report (authentication required)
 module.exports.createReport = async (req, res) => {
   try {
