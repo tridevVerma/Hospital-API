@@ -17,6 +17,9 @@ An Hospital API using MongoDB and NodeJS
       - Can be either of: [Negative, Travelled-Quarantine, Symptoms-Quarantine,Positive-Admit]
     - Date
 
+* ### Route access
+  - All routes are accessible via /api/v1 then the required routes
+
 * ### Required Routes :
   - /doctors/register → Register a new doctor
   - /doctors/login → Login Doctor (returns JWT)
